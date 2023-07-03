@@ -1,7 +1,7 @@
 import React from 'react';
 import './ItemSelf.css'
 
-import sonata from '../../photos/palisade.png';
+import sonata from '../../photos/sonata.png';
 import palisade from '../../photos/palisade.png';
 import staria from '../../photos/staria.png';
 
