@@ -38,6 +38,7 @@ function createData(id, name, rows, columns, height, weight) {
     createData('lll04', 'STARIA Lounge', 1995, 5255, 1990, '2t'),
   ];
 
+// sorting
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
     return -1;
@@ -66,6 +67,7 @@ function stableSort(array, comparator) {
   return stabilizedThis.map((el) => el[0]);
 }
 
+// table header
 const headCells = [
   {
     id: 'id',
@@ -222,8 +224,16 @@ export default function EnhancedTable(props) {
   };
 
   const handleDelete = (id) => {
-    const updatedData = tableData.filter((row) => row.id !== id);
-    setTableData(updatedData);
+    console.log("삭제")
+    // const updatedData = tableData.filter((row) => row.id !== id);
+    // setTableData(updatedData);
+  };
+
+  const onDelete = (targetId) => {
+    console.log(`${targetId}가 삭제되었습니다`);
+    const newItemList = tableData.filter((it) => it.id !== targetId);
+    console.log(newItemList)
+    setTableData(newItemList);
   };
 
   const handleChangePage = (event, newPage) => {
@@ -297,9 +307,17 @@ export default function EnhancedTable(props) {
                     <TableCell align="right">{row.height}</TableCell>
                     <TableCell align="right">{row.weight}</TableCell>
                     <TableCell align="right">
-                      <IconButton aria-label="delete" size="large"
+                      {/* <IconButton aria-label="delete" size="large"
                         onClick={() => handleDelete(row.id)} 
                       >
+                        <DeleteIcon />
+                      </IconButton> */}
+                      <IconButton aria-label="delete" size="large"
+                        onClick={() => {
+                          if (window.confirm(`${row.id}번째 일기를 정말 삭제하시겠습니까?`)) {
+                            onDelete(row.id); // 현재 id 
+                          }
+                        }}>
                         <DeleteIcon />
                       </IconButton>
                     </TableCell>

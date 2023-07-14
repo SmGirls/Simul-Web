@@ -9,7 +9,7 @@ function ItemSelf() {
     function viewItem(e) {
         e.preventDefault();
         console.log('viewItem');
-        window.location.href='/' //ItemTable.js로
+        window.location.href='/item-table' //ItemTable.js로
     }
     function viewContainer(e) {
         e.preventDefault();
