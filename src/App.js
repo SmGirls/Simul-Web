@@ -44,7 +44,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <ItemHeader/>
+        <ItemHeader />
         <Routes>
           <Route path="/" element={<Item />}></Route>
           <Route path="/item-table" element={<Table columns={columns} data={tableData} />}></Route>
