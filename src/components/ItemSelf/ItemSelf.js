@@ -19,6 +19,7 @@ function ItemSelf() {
 
     return (
     <>
+        <h1 className="item-header-title">물류 정보 관리</h1>
         <div class='item-method-self'>
             <div class='item-method-self-sonata'>
                 <img src={sonata} alt="sonata"/>

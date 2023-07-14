@@ -9,6 +9,7 @@ function ItemCsvUpload() {
 
     return (
     <>
+        <h1 className="item-header-title">물류 정보 관리</h1>
         <div class='item-csv-upload'>
             <input type="file" id="fileUpload" />
             <button class='btn-item-csv-upload' onClick={(uploadCsvFile)}>import item csv</button>
