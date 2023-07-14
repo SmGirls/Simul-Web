@@ -4,7 +4,7 @@ function ItemCsvUpload() {
     function uploadCsvFile(e) {
         e.preventDefault();
         console.log('upload csv file');
-        window.location.href='/' //ItemTable.js로
+        window.location.href='/item-table' //ItemTable.js로
     }
 
     return (
