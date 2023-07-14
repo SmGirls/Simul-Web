@@ -20,6 +20,7 @@ function Item() {
 
     return (
     <>
+        <h1 className="item-header-title">물류 정보 관리</h1>
         <div class='item-method'>
             <h3 class='item-method-title'>방법</h3>
             <button class='btn-import-item-csv' onClick={(importItemCsv)}>import item csv</button>
