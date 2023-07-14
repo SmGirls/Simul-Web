@@ -7,6 +7,7 @@ import Item from './components/Item/Item'
 import ItemHeader from './pages/CsvDetail/ItemHeader'
 import ItemSelf from './components/ItemSelf/ItemSelf'
 import ItemCsvUpload from './components/ItemCsv/ItemCsvUpload'
+import ManageConatainer from './components/ManageContainer/ManageContainer';
 
 function App() {
   const tableData = [];
@@ -50,6 +51,7 @@ function App() {
           <Route path="/item-table" element={<Table columns={columns} data={tableData} />}></Route>
           <Route path="/item-self" element={<ItemSelf />}></Route>
           <Route path="/item-csv-upload" element={<ItemCsvUpload />}></Route>
+          <Route path="/container" element={<ManageConatainer />}></Route>
         </Routes>
       </BrowserRouter>
     </>

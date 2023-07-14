@@ -17,12 +17,12 @@ const Menu = props => {
             </Link>
           </li>
           <li>
-            <Link className={props.active === '1' ? 'active' : ''} to="/qcoa/">
+            <Link className={props.active === '1' ? 'active' : ''} to="/container">
               컨테이너 관리
             </Link>
           </li>
           <li>
-            <Link className={props.active === '2' ? 'active' : ''} to="/market">
+            <Link className={props.active === '2' ? 'active' : ''} to="/mypage">
               내 정보
             </Link>
           </li>
