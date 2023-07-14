@@ -1,10 +1,12 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './css/reset.css'
-import Main from './pages/CsvDetail/CsvDetail'
-import CsvDetail from './pages/CsvDetail/CsvDetail'
 import Table from './components/Table/ItemTable'
 import { useMemo } from 'react';
+import Item from './components/Item/Item'
+import ItemHeader from './pages/CsvDetail/ItemHeader'
+import ItemSelf from './components/ItemSelf/ItemSelf'
+import ItemCsvUpload from './components/ItemCsv/ItemCsvUpload'
 
 function App() {
   const tableData = [];
@@ -40,13 +42,17 @@ function App() {
   );
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/csv" element={<CsvDetail />}></Route>
-        <Route path="/table" element={<Table columns={columns} data={tableData} />}></Route>
-      </Routes>
-    </BrowserRouter>
-
+    <>
+      <BrowserRouter>
+        <ItemHeader />
+        <Routes>
+          <Route path="/" element={<Item />}></Route>
+          <Route path="/item-table" element={<Table columns={columns} data={tableData} />}></Route>
+          <Route path="/item-self" element={<ItemSelf />}></Route>
+          <Route path="/item-csv-upload" element={<ItemCsvUpload />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
