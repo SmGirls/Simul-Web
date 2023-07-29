@@ -4,6 +4,12 @@
   padding: 20px 100px;
   color: black;
 }
+.td-list-title-info {
+  display: block;
+  padding: 0 100px;
+  padding-bottom: 20px;
+  color: black;
+}
 .btn-import-item-csv-self {
   padding: 20px 100px;
 }
