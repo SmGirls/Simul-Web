@@ -53,6 +53,9 @@ const TableDataList = () => {
   return (
     <div className="td-list">
       <h3 className="td-list-title">물류 정보 관리</h3>
+      <span className="td-list-title-info">
+        csv 파일 내부 물류 정보를 확인하세요.
+      </span>
       {boxes.length != 0 ? (
         <EnhancedTable rows={boxes} columns={columns} tableData={boxes} />
       ) : (

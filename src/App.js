@@ -4,11 +4,11 @@ import './css/reset.css'
 import Table from './components/Table/ItemTable'
 import { useMemo } from 'react'
 import ItemHeader from './pages/CsvDetail/ItemHeader'
-import ItemSelf from './components/ItemSelf/ItemSelf'
 import ItemCsvUpload from './components/ItemCsv/ItemCsvUpload'
 import ManageConatainer from './components/ManageContainer/ManageContainer'
 import MainChoose from './pages/MainChoose/MainChoose'
 import TableDataList from './pages/TableDataList/TableDataList'
+import ItemSelf from './pages/ItemSelf/ItemSelf'
 
 function App() {
   return (
