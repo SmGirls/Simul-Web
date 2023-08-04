@@ -21,11 +21,6 @@ const Menu = props => {
               컨테이너 관리
             </Link>
           </li>
-          <li>
-            <Link className={props.active === '2' ? 'active' : ''} to="/mypage">
-              내 정보
-            </Link>
-          </li>
         </ul>
       </div>
     </header>

@@ -85,6 +85,7 @@ video {
   /* font: inherit; */
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -99,17 +100,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -117,14 +122,17 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
   /* color: #222222; */
 }
+
 .ir_pm {
   display: block;
   overflow: hidden;
@@ -132,12 +140,14 @@ a {
   line-height: 0;
   text-indent: -9999rem;
 }
+
 button {
   padding: 0;
 
   cursor: pointer;
   border: none;
 }
+
 input {
   padding: 0;
   outline: none;
