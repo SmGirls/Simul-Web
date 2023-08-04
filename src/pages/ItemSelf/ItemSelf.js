@@ -26,15 +26,18 @@ function ItemSelf() {
       <div class="item-method-self">
         <div class="item-method-self-item">
           <img src={sonata} alt="sonata" />
-          <input />
+          <input type="number" name="number" placeholder="Input number" />
+          <input type="submit" value="Submit" />
         </div>
         <div class="item-method-self-item">
           <img src={palisade} alt="palisade" />
-          <input />
+          <input type="number" name="number" placeholder="Input number" />
+          <input type="submit" value="Submit" />
         </div>
         <div class="item-method-self-item">
           <img src={staria} alt="staria" />
-          <input />
+          <input type="number" name="number" placeholder="Input number" />
+          <input type="submit" value="Submit" />
         </div>
       </div>
       <div className="item-method-btn">
