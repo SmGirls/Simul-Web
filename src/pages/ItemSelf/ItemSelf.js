@@ -19,25 +19,25 @@ function ItemSelf() {
 
   return (
     <>
-      <h3 className="item-self-title">물류 정보 입력</h3>
-      <span className="item-self-title-info">
-        각 물류의 수를 직접 입력하세요.
-      </span>
+      <h1 className="item-self-title">물류 정보 입력</h1>
+      <h4 className="item-self-title-info">
+        컨테이너에 적재할 물류를 입력하세요
+      </h4>
       <div class="item-method-self">
         <div class="item-method-self-item">
           <img src={sonata} alt="sonata" />
+          <p>SONATA</p>
           <input type="number" name="number" placeholder="Input number" />
-          <input type="submit" value="Submit" />
         </div>
         <div class="item-method-self-item">
           <img src={palisade} alt="palisade" />
+          <p>PALISADE</p>
           <input type="number" name="number" placeholder="Input number" />
-          <input type="submit" value="Submit" />
         </div>
         <div class="item-method-self-item">
           <img src={staria} alt="staria" />
+          <p>STARIA</p>
           <input type="number" name="number" placeholder="Input number" />
-          <input type="submit" value="Submit" />
         </div>
       </div>
       <div className="item-method-btn">
