@@ -11,14 +11,13 @@
 }
 
 .item-self-title {
-  padding: 20px 100px;
+  padding: 30px 100px;
 }
 
 .item-self-title-info {
   display: block;
-  padding: 0 100px;
-  padding-bottom: 20px;
-  color: black;
+  padding: 20px 100px;
+  color: #64748b;
 }
 
 .item-method-self {
@@ -29,7 +28,7 @@
   width: calc(100% - 200px);
   height: 500px;
   margin: 20px 100px;
-  background: #b5dcd0;
+  background: #f7f8f9;
 }
 
 .item-method-self-item {
@@ -37,38 +36,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
   background: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.124);
 }
 
-.item-method-self-item>img {
-  width: 300px;
-  height: 200px;
+.item-method-self-item > img {
+  margin-top: 40px;
+  width: 332px;
+  height: 175px;
   /* box-sizing: border-box; */
 }
+.item-method-self-item > p {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px 0;
+}
 
-.item-method-self-item>input {
-  width: 180px;
-  margin-top: 50px;
+.item-method-self-item > input {
+  width: 332px;
+  max-width: 332px;
+  height: 44px;
+  margin-top: 20px;
+  margin-bottom: 8px;
   padding-left: 16px;
   font-size: 20px;
+  opacity: 1;
+  border: 2px solid #047857;
+  border-radius: 8px;
 }
 
 .item-method-btn {
   width: 100%;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.item-method-btn>button {
+.item-method-btn > button {
   font-size: 18px;
   font-weight: 700;
   color: white;
 }
 
-.item-method-btn>button:last-child {
+.item-method-btn > button:last-child {
   margin-left: 20px;
   color: black;
 }
